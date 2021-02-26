@@ -1,0 +1,12 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    color: #38bb43;
+    background-color: #000000;
+}
+a{
+    color: #38bb43;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: 900;
+}
