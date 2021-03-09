@@ -1,12 +1,65 @@
 body{
-    font-family: 'Roboto Mono', monospace;
-    color: #38bb43;
+    font-family: 'Rajdhani';
+    color: #d8d8d8;
     background-color: #000000;
+    background-image: url(./images/dramatic_clouds.gif);
+    background-repeat: no-repeat;background-attachment: fixed;
+    background-size: cover;
+    margin: 20px;
 }
-a{
-    color: #38bb43;
+a
+{
+    color: #d8d8d8;
     text-decoration: none;
 }
-a:hover{
-    font-weight: 900;
+a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+ul
+{
+    list-style-type: none;
+}
+/** style dropdown liens**/
+.svgPlus{
+    fill: #8d8d8d;
+    color: rgb(19, 167, 75);
+}
+.svgPlus:hover{
+    fill: #ffffff;
+}
+.liensFixed{
+    border: 1px solid #ffffff7e;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.liensFixed:hover{    
+    height: 310px;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
+.linksbutton{
+    background-color: rgba(24, 24, 26, 0);
+    border: 0px;
+    color: #8d8d8d;
+    transition: 0.3s;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.linksbutton:hover{
+    transition: transform 0.3s;
+    color: #ffffff;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+#illustration{
+    height: 30%;
+    width: 100%;
+    margin: auto;
 }
