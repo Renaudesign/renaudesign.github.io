@@ -11,93 +11,110 @@
 </head>
 <body>
     <header id="intro">
+        <div>
+            <img src="./images/Avatar.gif" alt="">
+        </div>
         <div id="title">
             <h1>Renaud Sourmail</h1>
-            <h2>Développeur Front-End créatif</h2>
+            <p>Développeur Front-End créatif</p>
+            <p>Haut-de-Seine, Yvelines, Paris</p>
         </div>
-        <div class="liensFixed position-fixed">
-            <button class="linksbutton button position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#links-bubble" aria-expanded="false" aria-controls="collapseExample">
-                <img src="./src/plus.png" height="50px" height="50px">
-            </button>
-            <a href="https://renaudesign.webflow.io/" target="new"><img src="./src/test.gif" height="50px" height="50px" /></a>
-            <a href="https://www.artstation.com/renaudesign" target="new"><img src="./src/test.gif" height="50px" height="50px" /></a>
-            <a href="http://spacesam.deviantart.com/gallery/" target="new"><img src="./src/test.gif" height="50px" height="50px" /></a>
-            <a href="https://www.instagram.com/renaudesign/" target="new"><img src="./src/test.gif" height="50px" height="50px" /></a>
-            <a href="https://github.com/Renaudesign"><img src="./src/test.gif" height="50px" height="50px" /></a>
-            </div>
+        <p class="scrollDown"><img src="./images/downarrow.png" alt=""></p>
     </header>
-    <section class="container" id="skills">
-        <div class="row">
-            <div id="techSkills" class="infoSection col-sm">
-                <h3>Compétences techniques</h3>
-                <ul>
-                    <li>Html</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                    <li>SQL Server</li>
-                    <li>Git</li>
-                    <li>Unity</li>
-                    <li>C#</li>
-                </ul>
+    <div id="page">
+        <section id="liensFixed" class="linksMenu">
+            <button class="linksbutton">
+                <img src="./images/plus.png" height="40px" height="40px">
+            </button>
+            <a href="https://github.com/Renaudesign"><img src="./images/github.png" class="links" /></a>
+            <a href="https://renaudesign.webflow.io/" target="new"><img src="./images/book.png" class="links" /></a>
+            <a href="https://www.artstation.com/renaudesign" target="new"><img src="./images/artstation.png"class="links" /></a>
+            <a href="http://spacesam.deviantart.com/gallery/" target="new"><img src="./images/deviantart.png" class="links" /></a>
+            <a href="https://www.instagram.com/renaudesign/" target="new"><img src="./images/instagram.png" class="links" /></a>
+        </section>
+        <section class="resume">
+            <p id="summary">Je suis créatif et en formation .NET, en recherche de poste de développeur Front-End en Ile-de-France. Je m'intéresse aux milieux culturels et artistiques, à l'industrie du jeu vidéo et aux sciences.</p>
+			<p><a href="mailto:renaud@renaudesign.art" data-email="email" class="btn">Contactez-moi</a></p>
+		</section>
+        <section id="skills" class="row">
+            <div class="row">
+                <div id="techSkills" class="infoSection col-sm">
+                    <h3>Compétences techniques</h3>
+                    <ul>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>SQL Server</li>
+                        <li>Git</li>
+                        <li>Unity</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div id="artSkills" class="infoSection col-sm">
+                    <h3>Compétences graphiques</h3>
+                    <ul>
+                        <li>Adobe Creative</li>
+                        <li>Modélisation 3D : Blender, 3ds Max, Maya</li>
+                        <li>Design graphique</li>
+                        <li>Unity</li>
+                        <li>Animation 3d</li>
+                    </ul>
+                </div>
+                <div id="personnalSkills" class="infoSection col-sm">
+                    <h3>Compétences transverses</h3>
+                    <ul>
+                        <li>Méthode Scrum</li>
+                        <li>Travail d'équipe</li>
+                        <li>Capacité d'adaptation</li>
+                    </ul>
+                </div>
             </div>
-            <div id="artSkills" class="infoSection col-sm">
-                <h3>Compétences graphiques</h3>
-                <ul>
-                    <li>Adobe Creative</li>
-                    <li>Modélisation 3D : Blender, 3ds Max, Maya</li>
-                    <li>Design graphique</li>
-                    <li>Unity</li>
-                    <li>Animation 3d</li>
-                </ul>
-            </div>
-            <div id="personnalSkills" class="infoSection col-sm">
-                <h3>Compétences transverses</h3>
-                <ul>
-                    <li>Méthode Scrum</li>
-                    <li>Travail d'équipe</li>
-                    <li>Capacité d'adaptation</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row" id="illustration">
-            <div class="col"><img src="./src/robogeisha_v2_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
-            <div class="col"><img src="./SRC/space_cadet_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
-            <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
-            <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
-            <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
-            <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
-        </div>
-    </section>
-    <section id="work">
-        <div class="row">
-            <div class="infoSection col-sm">
-                <h3>Expérience professionelle</h3>
-                <ul>
-                    <li>LaManu Versailles : Développeur .NET</li>
-                    <li>Workshops CaféSalé 2011 et 2012</li>
-                    <li>Animateur 3D / Jeu vidéo (MJM Graphic Design. 2007 - 2009)</li>
-                    <li>Spécialisation infographie (EAP PrépaSeine 2005 - 2006)</li>
-                    <li>Cours préparatoire aux grandes écoles d'arts (EAP PrépaSeine 2004 - 2005)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="school">
-        <div class="row">
-            <div class="infoSection col-sm">
-                <h3>Formation</h3>
-                <ul>
-                    <li>LaManu Versailles : Développeur .NET</li>
-                    <li>Workshops CaféSalé 2011 et 2012</li>
-                    <li>Animateur 3D / Jeu vidéo (MJM Graphic Design. 2007 - 2009)</li>
-                    <li>Spécialisation infographie (EAP PrépaSeine 2005 - 2006)</li>
-                    <li>Cours préparatoire aux grandes écoles d'arts (EAP PrépaSeine 2004 - 2005)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
+        <section id="uidesign" class="row">
+                <div class="col"><img src="./src/robogeisha_v2_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/space_cadet_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+        </section>
+        <section id="work"class="row">
+            <h3>Expérience professionelle</h3>
+            <ul>
+                <li>LaManu Versailles : Développeur .NET</li>
+                <li>Workshops CaféSalé 2011 et 2012</li>
+                <li>Animateur 3D / Jeu vidéo (MJM Graphic Design. 2007 - 2009)</li>
+                <li>Spécialisation infographie (EAP PrépaSeine 2005 - 2006)</li>
+                <li>Cours préparatoire aux grandes écoles d'arts (EAP PrépaSeine 2004 - 2005)</li>
+            </ul>
+        </section>
+        <section id="3dmodeling" class="row">
+                <div class="col"><img src="./src/robogeisha_v2_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/space_cadet_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./SRC/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+        </section>
+        <section id="school" class="row">
+            <h3>Formation</h3>
+            <ul>
+                <li>LaManu Versailles : Développeur .NET</li>
+                <li>Workshops CaféSalé 2011 et 2012</li>
+                <li>Animateur 3D / Jeu vidéo (MJM Graphic Design. 2007 - 2009)</li>
+                <li>Spécialisation infographie (EAP PrépaSeine 2005 - 2006)</li>
+                <li>Cours préparatoire aux grandes écoles d'arts (EAP PrépaSeine 2004 - 2005)</li>
+            </ul>
+        </section>
+        <section id="illustration" class="row">
+                <div class="col"><img src="./images/robogeisha_v2_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
+                <div class="col"><img src="./images/space_cadet_by_spacesam.jpg" alt="" height="100%" width="100%"></div>
+                <div class="col"><img src="./images/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./images/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./images/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+                <div class="col"><img src="./images/medeus_dorian_by_spacesam.jpg" alt=""  height="100%" width="100%"></div>
+        </section>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

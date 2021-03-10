@@ -1,15 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
 body{
     font-family: 'Rajdhani';
     color: #d8d8d8;
     background-color: #000000;
-    background-image: url(./images/dramatic_clouds.gif);
-    background-repeat: no-repeat;background-attachment: fixed;
+    background-image: url(./images/dramatic_skyline.gif), url(./images/dramatic_clouds.gif);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, fixed;
     background-size: cover;
+    background-position: right  200px, top;
     margin: 20px;
+    height: 100%;
 }
 a
 {
-    color: #d8d8d8;
+    color: #ffffff7e;
     text-decoration: none;
 }
 a:hover
@@ -22,44 +31,84 @@ ul
 {
     list-style-type: none;
 }
-/** style dropdown liens**/
-.svgPlus{
-    fill: #8d8d8d;
-    color: rgb(19, 167, 75);
+/*style dropdown liens*/
+.links{
+    height: 40px;
+    width: 40px;
+    margin: 0px 0px 4px 0px  ;
+    filter: grayscale(1);
+    transition: 0.2s;
 }
-.svgPlus:hover{
-    fill: #ffffff;
+.links:hover{
+    height: 40px;
+    width: 40px;
+    margin: 0px 0px 4px 0px  ;
+    filter: grayscale(0);
+    transition: 0.2s;
 }
-.liensFixed{
-    border: 1px solid #ffffff7e;
-    padding: 5px;
-    height: 60px;
-    width: 60px;
+.linksMenu{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #0000007e;
+    border: 1px solid #ffffff;
+    padding: 4px 4px;
+    height: 50px;
+    width: 50px;
     overflow: hidden;
     transition: 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
 }
-.liensFixed:hover{    
-    height: 310px;
+.linksMenu:hover{    
+    height: 272px;
     border: 1px solid #ffffff;
     transition: 0.3s;
+    opacity: 1;
 }
 .linksbutton{
     background-color: rgba(24, 24, 26, 0);
     border: 0px;
-    color: #8d8d8d;
-    transition: 0.3s;
+    color: #ffffff;
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 5px;
+    transition: 0.3s;
 }
-.linksbutton:hover{
-    transition: transform 0.3s;
-    color: #ffffff;
+#liensFixed:hover .linksbutton{
     transform: rotate(45deg);
     transition: transform 0.3s;
 }
+/**/
 #illustration{
     height: 30%;
     width: 100%;
     margin: auto;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header img{
+    margin: 20px;
+    height: 50%;
+    width: auto;
+}
+header div > p{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.scrollDown{
+    position: absolute;
+    bottom: 0;
+}
+.scrollDown img{
+    height: 2em;
+    width: 2em;
+}
+#page{
+    background-color: #000000;
 }
