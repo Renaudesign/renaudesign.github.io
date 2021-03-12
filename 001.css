@@ -33,7 +33,6 @@ ul
 {
     list-style-type: none;
 }
-
 /*style dropdown liens*/
 .links{
     height: 40px;
@@ -91,6 +90,10 @@ header{
     align-items: center;
     height: 100%;
     z-index: 0;
+    background-image: url(./images/travaux.gif);
+    background-repeat: repeat-x;
+    background-size: 20%;
+    background-position: center;
 }
 header > div > img{
     z-index: -100;
