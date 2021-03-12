@@ -6,7 +6,7 @@ html{
 }
 body{
     font-family: 'Rajdhani', sans-serif;
-    color: #d8d8d8;
+    color: #d8d8d8;line-height: 0.9rem;
     background-color: #141318;
     background-image: url(./images/dramatic_skyline.gif), url(./images/dramatic_clouds.gif);
     background-repeat: no-repeat, no-repeat;
@@ -32,6 +32,12 @@ a:hover
 ul
 {
     list-style-type: none;
+}
+li{
+    margin-bottom: 10px;
+}
+strong{
+    font-weight: 600;
 }
 /*style dropdown liens*/
 .links{
@@ -81,7 +87,8 @@ ul
 }
 /**/
 section{
-    padding: 30px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 header{
     position: relative;
@@ -93,7 +100,7 @@ header{
     background-image: url(./images/travaux.gif);
     background-repeat: repeat-x;
     background-size: 20%;
-    background-position: center;
+    background-position: top;
 }
 header > div > img{
     z-index: -100;
@@ -120,7 +127,7 @@ header div > p{
     font-size: 1.1rem;
     text-align: center;
     background-color: #ffffff25;
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 .contact{
     display: inline-block;
