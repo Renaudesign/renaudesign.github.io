@@ -1,57 +1,147 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-    <link href="001.css" rel="stylesheet" type="text/css"/>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link href="001.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-    <title>Renaud Sourmail - Développur Front-End créatif</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <title>Renaud Sourmail - Développeur Front-End créatif</title>
 </head>
 <body>
-    <div id="title">
-        <h1>Renaud Sourmail</h1>
-        <h2>Developpeur Front-End créatif</h2>
+    <header id="intro">
+        <div>
+            <img src="./images/Avatar.gif" alt="">
+        </div>
+        <div id="title">
+            <h1>Renaud Sourmail</h1>
+            <p>Développeur Front-End créatif</p>
+            <p><img alt="géolocalisation" title="géolocalisation" src="./images/geoloc.png"/> Hauts-de-Seine, Yvelines, Paris</p>
+        </div>
+        <p class="scrollDown"><img src="./images/downarrow.png" alt=""></p>
+    </header>
+    <div id="page">
+        <nav id="liensFixed" class="linksMenu">
+            <button class="linksbutton">
+                <img src="./images/plus.png" height="40px" height="40px">
+            </button>
+            <a href="https://github.com/Renaudesign"><img src="./images/github.png" alt="Lien vers ma page github" title="Github" class="links" /></a>
+            <a href="https://renaudesign.webflow.io/" target="new"><img src="./images/book.png" alt="Lien vers mon book en ligne" title="Book" class="links" /></a>
+            <a href="https://www.artstation.com/renaudesign" target="new"><img src="./images/artstation.png" alt="Lien vers mon book ArtStation" title="ArtStation" class="links" /></a>
+            <a href="http://spacesam.deviantart.com/gallery/" target="new"><img src="./images/deviantart.png" alt="Lien vers mon book Deviantart" title="Deviantart" class="links" /></a>
+            <a href="https://www.instagram.com/renaudesign/" target="new"><img src="./images/instagram.png" alt="Lien vers mon compte Instagram" title="Instagram" class="links" /></a>
+        </nav>
+        <section class="resume">
+            <p id="summary">Je suis un créatif en formation .NET, à la recherche d'un poste de développeur Front-End en Ile-de-France.<br />Je m'intéresse aux milieux culturels et artistiques, à l'industrie du jeu vidéo et aux sciences.</p>
+			<div class="contact "><a href="mailto:renaud@renaudesign.art" data-email="email">Contactez-moi</a></div>
+		</section>
+        <section id="skills" class="row">
+            <div class="row">
+                <div id="techSkills" class="col-sm">
+                    <h3>Techniques</h3>
+                    <ul>
+                        <li>HTML / CSS (bootstrap)</li>
+                        <li>JS (JQuery)</li>
+                        <li>SQL Server</li>
+                        <li>Git</li>
+                        <li>Unity</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div id="artSkills" class="col-sm">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Illustration</li>
+                        <li>Webdesign</li>
+                        <li>Prépresse</li>
+                        <li>Modélisation 3D</li>
+                    </ul>
+                </div>
+                <div id="softwares" class="col-sm">
+                    <h3>Logiciels</h3>
+                    <ul>
+                        <li>Visual Studio & VS Code</li>
+                        <li>Suite Adobe (PS, ID, AI...)</li>
+                        <li>3ds Max, Maya, Blender</li>
+                        <li>Unity</li>
+                        <li>Trello</li>
+                    </ul>
+                </div>
+                <div id="personnalSkills" class="col-sm">
+                    <h3>Transverses</h3>
+                    <ul>
+                        <li>Autonome</li>
+                        <li>Adaptatif</li>
+                        <li>Polyvalent</li>
+                        <li>Travail d'équipe</li>
+                        <li>Force de proposition</li>
+                        <li>Méthode Scrum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="uidesign" class="row"></section>
+        <section id="work"class="row">
+            <h3>Expérience</h3>
+            <ul>
+                <li>
+                    <strong>Graphiste web et print. Illustrateur 2D et 3D</strong><br />
+                    Freelance (Renaudesign) janvier 2019- Aujourd’hui
+                </li> 
+                <li>
+                    <strong>Infographiste 2D / 3D créa et exé.</strong> Scénographie sur lieu de vente (Courir, Go Sport, InterSport...)<br />
+                    Ozalyd août 2017 - janvier 2019
+                </li> 
+                <li>
+                    <strong>Ambassadeur Marque.</strong> Démo évenementielle (Oculus, Microsoft)<br />
+                    Atmosphères février 2016 - juillet 2017
+                </li> 
+                <li>
+                    <strong>Concept Artist, Infographiste 3D, graphiste polyvalent</strong><br />
+                    Sweet Arsenic Studio mai 2014 -juillet 2017 
+                </li> 
+                <li>
+                    <strong>Graphiste web / print / Intégrateur web</strong> (Drupal Wordpress)<br /> 
+                    Rumeur Publique oct. 2014 - sept. 2015
+                </li> 
+                <li>
+                    <strong>Infographiste polyvalent.</strong> Illustration, graphisme web print <br />
+                    AngelEyes oct. 2013 - jan. 2014
+                </li> 
+                <li>
+                    <strong>Freelance graphiste & illustrateur</strong> avril 2012 - mars 2013<br />
+                </li> 
+                <li>
+                    <strong>Webdesigner, intégrateur e-mailing</strong>
+                    Bestmarques.com mars 2009 - mars 2012
+                </li> 
+                <li>
+                    <strong>Webdesigner créatif, intégrateur e-mailing, webmaster</strong><br />
+                    Firstluxe.com nov. 2008 - mars 2009
+                </li> 
+                <li>
+                    <strong>Webmaster, webdesigner, directeur artistique, illustrateur</strong><br />
+                    Fiesta.fr juin 2007 - juin 2008
+                </li>
+            </ul>
+        </section>
+        <section id="modeling3d" class="row"><div class="col"></section>
+        <section id="school" class="row">
+            <h3>Formation</h3>
+            <ul>
+                <li><strong>Développeur .NET</strong> : LaManu Versailles | Février > Mai 2021  </li>
+                <li><strong>Workshops CaféSalé</strong> | 2011 et 2012</li>
+                <li><strong>Animateur 3D / Jeu vidéo</strong> | MJM Graphic Design. 2007 - 2009</li>
+                <li><strong>Spécialisation infographie</strong> | EAP PrépaSeine 2005 - 2006</li>
+                <li><strong>Cours préparatoire aux grandes écoles d'arts</strong> | EAP PrépaSeine 2004 - 2005</li>
+            </ul>
+        </section>
+        <section id="illustration" class="row">
+        </section>
+        <footer>FOOTER</footer>
     </div>
-    <div id="linkmenu">
-        <h3>Liens</h3>
-        <ul>
-            <li><a href="https://renaudesign.webflow.io/" target="new">Book</a></li>
-            <li><a href="https://www.artstation.com/renaudesign" target="new">Artstation</a></li>
-            <li><a href="http://spacesam.deviantart.com/gallery/" target="new">DeviantArt</a></li>
-            <li><a href="https://www.instagram.com/renaudesign/" target="new">Instagram</a></li>
-        </ul>
-    </div>
-    <div id="skills" class="infoSection">
-        <h3>Compétences</h3>
-        <ul>
-            <li>Adobe Creative</li>
-            <li>Modélisation 3D : Blender, 3ds Max, Maya</li>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Design graphique</li>
-            <li>Unity</li>
-            <li>Animation 3d</li>
-        </ul>
-    </div>
-    <div id="school" class="infoSection">
-        <h3>Formation</h3>
-        <ul>
-            <li>LaManu Versaille : Développeur .NET</li>
-            <li>Workshops CaféSalé 2011 et 2012</li>
-            <li>Animateur 3D / Jeu vidéo (MJM Graphic Design. 2007 - 2009)</li>
-            <li>Spécialisation infographie (EAP PrépaSeine 2005 - 2006)</li>
-            <li>Cours préparatoire aux grandes écoles d'arts (EAP PrépaSeine 2004 - 2005)</li>
-        </ul>
-    </div>
-    <div id="profesionalxp" class="infoSection">
-        <h3>Expérience professionnelle</h3>
-        <ul>
-            <li>LaManu Versaille : Développeur .NET</li>
-            <li>Workshops CaféSalé 2011 et 2012</li>
-            <li>Animateur 3D / Jeu vidéo (MJM Graphic Design. 2007 - 2009)</li>
-            <li>Firstluxe (intégrateur emailing et flash    )</li>
-            <li>Fiesta (Webmaster du site fiesta.fr)</li>
-        </ul>
-    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
