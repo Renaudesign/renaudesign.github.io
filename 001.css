@@ -1,12 +1,15 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
 }
 html{
     height: 100%;
 }
 body{
     font-family: 'Rajdhani', sans-serif;
-    color: #d8d8d8;line-height: 0.9rem;
+    color: #d8d8d8;
+    line-height: 1.2rem;
     background-color: #141318;
     background-image: url(./images/dramatic_skyline.gif), url(./images/dramatic_clouds.gif);
     background-repeat: no-repeat, no-repeat;
@@ -22,22 +25,23 @@ a
     text-decoration: none;
     transition: 0.2s;
 }
-a:hover
-{
+a:hover{
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
 }
-ul
-{
+ul li{
     list-style-type: none;
 }
 li{
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 strong{
     font-weight: 600;
+}
+.row{
+    margin: 0px;
 }
 /*style dropdown liens*/
 .links{
@@ -87,8 +91,7 @@ strong{
 }
 /**/
 section{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 40px 100px;
 }
 header{
     position: relative;
@@ -101,6 +104,11 @@ header{
     background-repeat: repeat-x;
     background-size: 17%;
     background-position: top;
+}
+#title img{
+    height: 20px;
+    width: 20px;
+    display: inline;
 }
 header > div > img{
     z-index: -100;
@@ -149,11 +157,11 @@ header div > p{
     color: #ffffff;
     font-weight: 500;
 }
+#skills li{
+    margin: 0px;
+}
 #uidesign{
-    margin: 0;
-    height: 30em;
-    display: block;
-    position: relative;
+    height: 25em;
     background-image: url(./images/webdesign/BM_banner.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -161,10 +169,7 @@ header div > p{
     background-attachment: fixed;
 }
 #modeling3d{
-    margin: 0;
-    height: 30em;
-    display: block;
-    position: relative;
+    height: 25em;
     background-image: url(./images/3dmodeling/lamenike_banner.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -172,13 +177,13 @@ header div > p{
     background-attachment: fixed;
 }
 #illustration{
-    margin: 0;
-    height: 30em;
-    display: block;
-    position: relative;
+    height: 25em;
     background-image: url(./images/illustration/space_cadet_banner.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+footer{
+    text-align: center;
 }
