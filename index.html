@@ -7,6 +7,7 @@
     <link href="001.css" rel="stylesheet" type="text/css" />
     <link href="styleContactForm.css" rel="stylesheet" type="text/css">
     <link href="styleLinks.css" rel="stylesheet" type="text/css">
+    <link href="contactForm.js" rel="script" type="text/js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Renaud Sourmail - Développeur Front-End créatif</title>
@@ -43,7 +44,7 @@
             <p>Je suis un créatif en formation .NET, à la recherche d'un poste de développeur Front-End en Ile-de-France.<br />
                 Je m'intéresse aux milieux culturels et artistiques, à l'industrie du jeu vidéo et aux sciences.</p>
 
-            <!-- Button trigger accordeon -->              
+            <!-- Button trigger accordion -->              
             <h2 class="accordion-header" id="headingOne">       
                 <button id="contactButton" type="button" class="shadow-none collapsed" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="true" aria-controls="collapseOne">Contactez-moi</button>
             </h2>
@@ -51,33 +52,31 @@
             <div class="collapse w-100 text-center" id="contactForm" role="dialog" tabindex="-1" aria-labelledby="contactForm">
                 <div class="dialog row" role="form">
                     <div class="accordion-body col-md">
-                        <form action="/action_page.php">
+                        <form action="https://formspree.io/f/mpzkakde" method="post">
                         <div class="lg-form mb-2">
-                            <input type="text" id="nameContact" class="form-control validate rounded-0" placeholder="Nom">
+                            <input name="name" type="text" id="nameContact" class="form-control validate rounded-0" placeholder="Nom">
                         </div>
                 
                         <div class="lg-form mb-2 ">
-                            <input type="email" id="mailContact" class="form-control validate rounded-0" placeholder="E-mail">
+                            <input name="email" type="email" id="mailContact" class="form-control validate rounded-0" placeholder="E-mail" required>
                         </div>
                 
                         <div class="lg-form mb-2 ">
-                            <input type="text" id="subjContact" class="form-control validate rounded-0" placeholder="Sujet du mail">
+                            <input name="subject" type="text" id="subjContact" class="form-control validate rounded-0" placeholder="Sujet du mail">
                         </div>
                     </div>
                     
                     <div class="accordion-body col-sm">
                         <div class="md-form">
-                            <textarea type="text" id="mesgContact" class="md-textarea form-control rounded-0" rows="4" placeholder="Message"></textarea>
+                            <textarea name="Message" type="text" id="mesgContact" class="md-textarea form-control rounded-0" rows="4" placeholder="Message"></textarea>
                         </div>
                     </div>
-
                     <div class="accordion-footer d-flex justify-content-center">
-                    <button class="btn envoyer shadow-none"><img alt="contact" title="contact" src="./images/contact.png" /> Envoyer</button>
+                    <button class="btn envoyer shadow-none" type="submit"><img alt="contact" title="contact" src="./images/contact.png" /> Envoyer</button>
                     </div>
                     </form>
                 </div>
             </div>
-
         </section>
         <section id="skills" class="row">
             <h2>Compétences</h2>
