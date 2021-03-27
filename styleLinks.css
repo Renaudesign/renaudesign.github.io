@@ -1,0 +1,55 @@
+/*style dropdown liens*/
+.linksMenu{
+    position: fixed;
+    background-color: #000000c9;
+    border: 1px solid #ffffff;
+    padding: 4px 4px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 20;
+}
+@media (max-width: 600px) {
+    .linksMenu{
+        right: 10px;
+        bottom: 10px;
+    }
+  }
+@media (min-width: 600px) {
+    .linksMenu{
+        top: 20px;
+        left: 20px;
+}}
+.linksMenu:hover{    
+    height: 280px;
+    border: 1px solid #ffffff;
+    transition: 0.3s ease-out;
+    opacity: 1;
+}
+.links{
+    height: 40px;
+    width: 40px;
+    margin: 0px 0px 6px 0px  ;
+    filter: grayscale(1) brightness(1.4);
+    transition: 0.4s ease-out;
+}
+.links:hover{
+    fill: #E99A28;
+    filter: grayscale(0); 
+    transition: 0.4s ease-out;
+}
+.pluslinks{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    transition: 0.3s ease-out;
+    user-select: none;
+}
+#linksFixed:hover .pluslinks{
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-out;
+}
+
